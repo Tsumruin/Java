@@ -2,15 +2,26 @@ package park;
 
 public enum Area{
     AdventureLand("アドベンチャーランド"),
-    WesternLand("ウエスタンランド");
+    WesternLand("ウエスタンランド"),
+    CritterCountry("クリッターカントリー"),
+    FantasyLand("ファンタジーランド"),
+    ToonTown("トゥーンタウン"),
+    TomorrowLand("トゥモローランド"),
+    MediterraneanHarbor("メディテレーニアンハーバー"),
+    AmericanWaterfront("アメリカンウォーターフロント"),
+    PortDiscovery("ポートディスカバリー"),
+    LostLiverDelta("ロストリバーデルタ"),
+    ArabianCoast("アラビアンコースト"),
+    MermaidLagoon("マーメイドラグーン"),
+    MysteriousIsland("ミステリアスアイランド");
 
-    private String name;
+    private String areaName;
 
-    private Area(String name){
-        this.name = name;
+    private Area(String areaName){
+        this.areaName = areaName;
     }
 
-    public String getName(){
-        return this.name;
+    public String getAreaName(){
+        return this.areaName;
     }
 }
