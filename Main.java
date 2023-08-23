@@ -6,12 +6,30 @@ class Main{
         String areaName = area.getAreaName();
 
 
-        Attraction jungle = new Attraction(
-                                "ジャングルクルーズ",
-                                "AdventureLand"
+        DPAAttraction soaring = new DPAAttraction(
+                                "ソアリン",
+                                "MediterraneanHarbor"
                             );
-                            
-        jungle.printAll();
+
+        PriorityAttraction space = new PriorityAttraction(
+                                "スペースマウンテン",
+                                "TomorrowLand"
+                            );
+
+        Attraction syndo = new Attraction(
+                                "シンド",
+                                "ArabianCoast"
+                            );
+
+        Attraction[] attAry = new Attraction[3];
+        attAry[0] = soaring;
+        attAry[1] = space;
+        attAry[2] = syndo;
+
+        for(Attraction att : attAry){
+            att.printInfo();
+            System.out.println("====");
+        }
 
     }
 }
