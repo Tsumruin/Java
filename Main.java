@@ -8,23 +8,26 @@ class Main{
 
         DPAAttraction soaring = new DPAAttraction(
                                 "ソアリン",
-                                "MediterraneanHarbor"
+                                "MediterraneanHarbor",
+                                87
                             );
 
         PriorityAttraction space = new PriorityAttraction(
                                 "スペースマウンテン",
-                                "TomorrowLand"
+                                "TomorrowLand",
+                                12
                             );
 
-        Attraction syndo = new Attraction(
+        Attraction sindo = new Attraction(
                                 "シンド",
-                                "ArabianCoast"
+                                "ArabianCoast",
+                                24
                             );
 
         Attraction[] attAry = new Attraction[3];
         attAry[0] = soaring;
         attAry[1] = space;
-        attAry[2] = syndo;
+        attAry[2] = sindo;
 
         for(Attraction att : attAry){
             att.printInfo();
