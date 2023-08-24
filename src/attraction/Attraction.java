@@ -1,4 +1,5 @@
-package park;
+package classes.attraction;
+import classes.park.Area;
 
 public class Attraction{
     /**

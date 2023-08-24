@@ -1,4 +1,4 @@
-package park;
+package classes.park;
 
 public enum Area{
     AdventureLand("アドベンチャーランド"),
