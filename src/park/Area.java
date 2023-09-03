@@ -1,19 +1,8 @@
 package classes.park;
 
 public enum Area{
-    AdventureLand("アドベンチャーランド"),
-    WesternLand("ウエスタンランド"),
-    CritterCountry("クリッターカントリー"),
-    FantasyLand("ファンタジーランド"),
-    ToonTown("トゥーンタウン"),
-    TomorrowLand("トゥモローランド"),
-    MediterraneanHarbor("メディテレーニアンハーバー"),
-    AmericanWaterfront("アメリカンウォーターフロント"),
-    PortDiscovery("ポートディスカバリー"),
-    LostLiverDelta("ロストリバーデルタ"),
-    ArabianCoast("アラビアンコースト"),
-    MermaidLagoon("マーメイドラグーン"),
-    MysteriousIsland("ミステリアスアイランド");
+    PiratesArea("パイレーツエリア"),
+    TomorrowArea("トゥモローエリア");
 
     private String areaName;
 

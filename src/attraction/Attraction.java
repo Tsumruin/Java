@@ -1,7 +1,7 @@
 package classes.attraction;
 import classes.park.Area;
 
-public class Attraction{
+public abstract class Attraction{
     /**
      * Attraction class contains basic infomations of attractions
      */
@@ -11,15 +11,15 @@ public class Attraction{
     private int capacity;
     private int waitTime;
 
-    public Attraction(String name, String areaName, int capacity){
+    public Attraction(String name, String areass, int capacity){
         this.name = name;
-        this.area = Area.valueOf(areaName).getAreaName();
+        this.area = area
         this.capacity = capacity;
         this.waitTime = 0;
     }
 
-    public Attraction(String name, String areaName, int capacity, int waitTime){
-        this(name, areaName, capacity);
+    public Attraction(String name, String area, int capacity, int waitTime){
+        this(name, area, capacity);
         this.waitTime = waitTime;
     }
 
@@ -35,14 +35,17 @@ public class Attraction{
         return  waitTime;
     }
 
+    public void setWaitTime(int waitTime){
+        this.waitTime = waitTime;
+    }
+
     public void dispWaitTime(){
         System.out.println("現在の待ち時間: " + waitTime);
     }
 
     public void printInfo(){
+        System.out.println("\n----------------------------------------");
         System.out.println("アトラクション名： " + name);
-        System.out.println("所属エリア名： " + area);
-        System.out.println("1回あたりの定員:" + capacity);
     }
 
 }
