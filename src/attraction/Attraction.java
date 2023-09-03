@@ -7,18 +7,16 @@ public abstract class Attraction{
 
     private String name;
     private String area;
-    private int capacity;
     private int waitTime;
 
-    public Attraction(String name, String areass, int capacity){
+    public Attraction(String name, String area){
         this.name = name;
         this.area = area;
-        this.capacity = capacity;
         this.waitTime = 0;
     }
 
-    public Attraction(String name, String area, int capacity, int waitTime){
-        this(name, area, capacity);
+    public Attraction(String name, String area, int waitTime){
+        this(name, area);
         this.waitTime = waitTime;
     }
 
@@ -44,7 +42,9 @@ public abstract class Attraction{
 
     public void printInfo(){
         System.out.println("\n----------------------------------------");
-        System.out.println("アトラクション名： " + name);
+        System.out.println("アトラクション名: " + name);
+        System.out.println("エリア名: " + area);
+        System.out.println("待ち時間: " + waitTime + "分");
     }
 
 }
