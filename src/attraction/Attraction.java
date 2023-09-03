@@ -1,5 +1,4 @@
 package classes.attraction;
-import classes.park.Area;
 
 public abstract class Attraction{
     /**
@@ -13,7 +12,7 @@ public abstract class Attraction{
 
     public Attraction(String name, String areass, int capacity){
         this.name = name;
-        this.area = area
+        this.area = area;
         this.capacity = capacity;
         this.waitTime = 0;
     }

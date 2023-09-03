@@ -1,5 +1,4 @@
 package classes.attraction;
-import classes.park.Area;
 
 public class NormalAttraction extends Attraction {
 
